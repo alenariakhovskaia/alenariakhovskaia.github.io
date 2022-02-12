@@ -1,0 +1,575 @@
+
+/* ======= Specifications: start ======= */
+html {
+    font-size: 14px;
+}
+
+
+body {
+    font-family: 'MuseoSansRegular', Arial, Tahoma, sans-serif;
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+* 
+    -moz-transition: all 0.3s ease;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+div, p, input, textarea, button, form, section, article, header, footer {
+    box-sizing: border-box;
+}
+
+div, p, input, textarea, button, form, ul, ol, section, article, header, footer, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+a, a:hover, a:active, a:focus, button, button:hover, button:active, button:focus, input, input:active, input:focus, textarea, textarea:active, textarea:focus {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5em; 
+    letter-spacing: 0.05em; 
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.home5-form__userFields:focus {
+    border: 3px solid blueviolet;
+}
+
+section {
+    padding: 90px 0;
+}
+
+.container { 
+    position: relative;
+}
+
+
+/* ------- my Custom Classes: start ------- */
+
+.upper { /* aimCustomClass */
+    text-transform: uppercase;
+}
+
+.bolder { /* aimCustomClass */
+    font-weight: 800;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.scroll{
+    display:block;
+    position:fixed;
+    color: gray;
+    bottom:40px;
+    right:50px;
+    text-align: center;  
+    width:50px;
+    height:50px;
+    font-size:18px;
+    opacity:0.7; 
+    padding-top: 10px;
+    background:#ddd;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    border-radius:50px
+}
+
+.scroll:hover {
+    color: rgb(172, 84, 250); 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.365); 
+    animation: bounce 1s;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+#a {
+         
+    filter: Alpha(Opacity=10); /* IE */
+    -moz-opacity: 0.1; 
+    -khtml-opacity: 0.1; 
+    opacity: 0.1;
+   }
+
+   .show-hide_buttons{
+       /* display: block;
+       justify-content: space-between; */
+       margin: 0 auto;
+       display: flex;
+       justify-content: center;
+       margin-top: 60px;
+       
+   }
+   .show-hide_button1, .show-hide_button2{
+
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px dashed rgba(255, 255, 255, 0.803);
+    border-radius: 5%;
+    font-family: "MuseoSansLight";
+    font-size: 1.357rem;
+    font-weight: bold;
+    letter-spacing: 0.18em;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #9f9f9fd2;
+    color: white;
+    
+   }
+   .show-hide_button1:focus{
+    border: 2px dashed rgba(118, 118, 118, 0.858); 
+    transition: 1s; 
+ }
+  .show-hide_button2:focus{
+    border: 2px dashed rgba(118, 118, 118, 0.858);  
+    transition: 1s;
+ }
+
+   
+
+/* ------- my Custom Classes: end ------- */
+
+/* ======= Specifications: end ======= */
+
+/* ======= homeH: header ======= */
+
+#homeH { /* General code. */
+    background: url("../img/home/header/header_bg.jpg") no-repeat center center / cover;
+    position: relative; 
+}
+
+.filterMainMenu {
+    height: 77px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.homeH-logo__img {
+    width: 71%;
+}
+
+.homeH-menu {
+    margin-top: 30px;
+}
+
+.homeH-menu__item-link {
+    font-family: "MuseoSansBlack";
+    text-transform: uppercase;
+    font-size: 0.786rem;
+    letter-spacing: 0.02em;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.homeH-menu__item-link_active:hover {
+    background: #2A2A2A;
+    color: #fff;
+}
+
+.homeH-phone { 
+    background: url("../img/home/footer/footer_phone-dashed-circle.svg") no-repeat left center;
+    margin-top: 19px;
+    padding-left: 46px;
+}
+
+.homeH-phone__text {
+    font-family: "MuseoSansBlack";
+    font-size: 1.143rem;
+    color: #fff;
+}
+
+.homeH-sandwichMenu {
+    display: none;
+    padding-right: 3%;
+}
+
+.homeH-sandwichMenu__img {
+    padding-top: 27px;
+    margin-left: 28px;
+}
+
+.homeH-boxTitle {
+    font-family: "MuseoSansLight";
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 203px 0 175px 0;
+}
+
+.homeH-boxTitle__title {
+    font-size: 6.429rem;
+    letter-spacing: 0.37em;
+    padding-bottom: 25px;
+}
+
+.homeH-boxTitle__subtitle {
+    font-size: 3.643rem;
+    letter-spacing: 0.25em;
+}
+
+.homeH-arrowButton {
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 auto 100px auto;
+    display: block;
+    background: url("../img/home/header/header_arrow-dashed-circle.svg") no-repeat center center;
+}
+
+/* ======= home1: section#1 (about) ======= */
+
+#home1 {
+    background: #43434312;
+}
+
+.home1-boxTitle__title { 
+    margin-bottom: 80px;
+}
+
+.home1-boxTitle__titlesH3 {
+    font-family: "MuseoSansBlack";
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #434343;
+}
+
+.home1-box__items {
+    width: 360px;
+    height: 357px;
+    background: #F4F4F4;
+    text-align: center;
+    box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.2);
+    padding-top: 50px;
+    margin: 0 14px;
+}
+
+.home1-box__items-img {
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 28px;
+}
+
+.home1-box__items-slogan {
+    font-family: "MuseoSansBlack";
+    font-size: 1.429rem;
+    text-transform: uppercase;
+    color: #434343;
+}
+
+.home1-box__items-underline {
+    width: 37px;
+    height: 1px;
+    background: #C6C6C6;
+    margin: 17px auto;
+}
+
+.home1-box__items-text {
+    font-family: "MuseoSansLight";
+    font-size: 1.214rem;
+    color: #636363;
+}
+
+/* ======= home2: section#2 (relocation) ======= */
+
+#home2 {
+    background: url("../img/home/section2/interests_bg.jpg") no-repeat center center / cover;
+}
+
+.home2 {
+    color: #fff;
+}
+
+.home2-boxTitle {
+    text-align: center;
+}
+
+.home2-boxTitle__title {
+    padding-bottom: 80px;
+    color: #fff;
+}
+
+.home2-interests {
+    padding: 57px 0;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px dashed white;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.home2-interests__text {
+    font-family: "MuseoSansLight";
+    font-size: 1.357rem;
+    letter-spacing: 0.18em;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+/* ======= home3: section#3 (facts) ======= */
+
+#home3 {
+    background: url("../img/home/section3/facts_bg.jpg") no-repeat center center / cover;;
+}
+
+.home3-boxTitle__title {
+    letter-spacing: 0.09em;
+    padding-bottom: 80px;
+    position: relative; 
+    text-align: center;
+    
+}
+
+.home3-box {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+
+}
+
+.home3-box__sets {
+    font-family: "MuseoSansLight";
+    font-size: 1.214rem;
+    width: 850px;
+    background: #F4F4F4;
+    margin: 0 auto;
+    padding-top: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    height: 70px;
+    margin-bottom: 6px;
+}
+
+.home3-box__sets :hover{
+    color: rgb(172, 84, 250);
+}
+
+/* ======= home4: section#4 (photos) ======= */
+
+#photos {
+    background: url("../img/home/section4/photos_bg.jpg") rgba(0,0,0,0.1) no-repeat center center/cover;
+}
+
+.photos-title{
+    /* text-align: center; */
+    margin: 0 auto;
+    margin-bottom: 80px;
+    width: 370px;
+}
+
+.photos__title{
+    color: rgb(89, 89, 89);
+    border: 3px dashed white;
+    border-radius: 4%;
+    padding: 16px 0;
+}
+
+.photos {
+    height: 2150px;
+}
+
+.photos-myPhotos {
+    margin-bottom: 100px;
+}
+
+.photos-myPhotos-img {
+    width: 100%;
+    border: 3px solid #fff;
+    border-radius: 1.5%;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.365);
+}
+
+.photos-myPhotos-img:hover {
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    transform: scale(1.04);
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.365);
+    transition: all 0.8s ease;
+  }
+
+/* ======= home5: section#5 (questions) ======= */
+
+#home5{
+    background: #34383B url("../img/home/section5/questions_bg.png") no-repeat center center / cover;
+    box-shadow: 2px 4px 77px rgba(67, 67, 67, 1);
+}
+
+.home5 {
+    color: #fff;
+}
+
+.home5-boxTitle__title { 
+    padding-bottom: 28px;
+    color: #fff;
+}
+
+.home5-boxTitle__subtitle {
+    font-family: "MuseoSansLight";
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 122px;
+    position: relative; 
+}
+
+.home5-boxTitle__arrow { 
+    top: 71%;
+    left: 47.8%;
+    background: url("../img/home/section5/questions_arrow-dashed-circle.svg") no-repeat center center;
+}
+
+.home5-form__userFields {
+    display: block;
+    width: 370px;
+    height: 67px;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: #545657d4;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    margin: 0 auto 9px auto;
+}
+
+.home5-form__userFields::placeholder {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 0.929rem;
+    padding-left: 34px;
+}
+
+.home5-form__userFields:hover {
+    border: 2px solid #fff;
+}
+
+.home5-form__userFields:hover::placeholder {
+    opacity: 1;
+}
+
+.home5-form__userFields:focus {
+    border: 2px solid #fff;
+}
+
+.home5-form__userOrder {
+    font-family: "MuseoSansBlack";
+    font-size: 1.071rem;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.home5-form__messageField {
+    display: block;
+    width: 370px;
+    height: 134px;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: #545657d4;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    margin: 0 auto 9px auto;
+}
+
+.home5-form__messageField::placeholder {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 0.929rem;
+    padding-left: 34px;
+}
+
+.home5-form__messageField:hover {
+    border: 2px solid #fff;
+}
+
+.home5-form__messageField:hover::placeholder {
+    opacity: 1;
+}
+
+.home5-form__messageField:focus {
+    border: 2px solid #fff;
+}
+
+/* ======= homeF: footer ======= */
+
+#homeF{
+    background: #2c3236;
+    box-shadow: 61px 3px 40px rgba(112, 115, 122, 0.5);
+}
+
+.homeF-logo__img{
+    width: 52%;
+}
+
+.homeF-copyright__text, .homeF-e-mail__text {
+    font-family: "MuseoSansLight";
+    font-size: 1rem;
+    color: #fff;
+    padding-top: 34px;
+    display: inline-block;
+}
+
+.homeF-e-mail__text:hover {
+    color: #fff;
+}
+
+.homeF-e-mail__text:hover::after {
+    content: '.................................................';
+    display: block;
+    color: #fff;
+    margin-top: -12px;
+}
+
+.homeF-phone {
+    background: url("../img/home/footer/footer_phone-dashed-circle.svg") no-repeat left center;
+    margin: 19px 0;
+    padding-left: 46px;
+}
+
+
+
+
+
+
+
+
+
+
+
